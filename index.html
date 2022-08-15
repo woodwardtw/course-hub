@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Course Hub Troubleshooter</title>
+  <link rel='stylesheet' href='css/main.css?ver=6.0.1' media='all' />
+</head>
+<body>
+<h1>Course Hub Troubleshooter</h1>
+<p>
+	This tool will help you identify why a course is missing. You'll want to know . . 
+</p>
+<ul>
+	<li>Course Name</li>
+	<li>Faculty Name</li>
+	<li>Department</li>
+</ul>
+<p>The tool will default to the current year and semester. If you want to change that use the selectors below.</p>
+<div class="calendar"
+<label for="year">Choose a year:</label>
+
+<select name="year" id="years">
+  <option value="2022" selected>2022</option>
+  <option value="2021">2021</option>
+  <option value="2020">2020</option>
+</select>
+
+<label for="semester">Choose a semester:</label>
+<select name="semester" id="semesters">
+  <option value="90" selected>Fall</option>
+  <option value="10">Winter</option>
+  <option value="20">Spring</option>
+</select>
+
+</div>
+
+<!--question-->
+<div class="section">
+	<h2 id="banner">Does the course exist in Banner?</h2>
+	<p>Check by going to the following URL.</p>
+	<a href="https://go.middlebury.edu/courses?" id="midd-banner-link">MIDD Banner Link</a><br>
+	<a href="https://go.middlebury.edu/" id="miis-banner-link">MIIS Banner Link *issue*</a>
+	<div class="options">
+		<div class="yes">
+			<a href="#yes-banner">Yes</a>
+		</div>
+		<div class="no">
+			<a href="#no-banner">No</a>
+		</div>
+	</div>
+</div>
+<!--end question-->
+</div>
+<div class="action-row">
+<!--action-->
+<div class="section response">
+	<h2 id="no-banner">The course isn't in Banner.</h2>
+	<div class="action">
+		<p>The academic or program coordinator needs to be contacted.</p>
+		<ul>
+			<li><a href="https://www.middlebury.edu/college/academics/academic-affairs/academic-administration/department-chairs-program-directors-and-academic#academic-coordinators">MIDD academic coordinators</a></li>
+			<li><a href="#">MIIS something or rather coordinators</a></li>
+			<li><a href="https://www.middlebury.edu/language-schools/contact">Language schools program coordinators</a></li>
+			<li><a href="#">Bread Loaf something or rathers</a></li>
+		</ul>
+	</div>
+</div>
+<!--end action-->
+<!--question-->
+<div class="section">
+	<h2 id="yes-banner">Has the instructor been assigned?</h2>
+	<p>Look at the column on the far right. Is there an instructor?</p>
+	<div class="options">
+		<div class="yes">
+			<a href="#yes-instructor">Yes</a>
+		</div>
+		<div class="no">
+			<a href="#no-instructor">No</a>
+		</div>
+	</div>
+</div>
+<!--end question-->
+</div>
+<div class="action-row">
+<!--action-->
+
+<div class="section response">
+	<h2 id="no-instructor">No instructor has been assigned.</h2>
+	<div class="action">
+		<p>The academic or program coordinator needs to be contacted.</p>
+		<ul>
+			<li><a href="https://www.middlebury.edu/college/academics/academic-affairs/academic-administration/department-chairs-program-directors-and-academic#academic-coordinators">MIDD academic coordinators</a></li>
+			<li><a href="#">MIIS something or rather coordinators</a></li>
+			<li><a href="https://www.middlebury.edu/language-schools/contact">Language schools program coordinators</a></li>
+			<li><a href="#">Bread Loaf something or rather</a></li>
+		</ul>
+	</div>
+</div>
+<!--end action-->
+<!--question-->
+<div class="section">
+	<h2 id="yes-instructor">Is the course listed in the course catalog?</h2>
+	<p>Check the course in the <a href="https://catalog.middlebury.edu">Course Catalog</a></p>
+	<div class="options">
+		<div class="yes">
+			<a href="#yes-catalog">Yes</a>
+		</div>
+		<div class="no">
+			<a href="#no-catalog">No</a>
+		</div>
+	</div>
+</div>
+<!--end question-->
+</div>
+<div class="action-row">
+<!--action-->
+
+<div class="section response">
+	<h2 id="no-catalog">The course is not in the course catalog.</h2>
+	<div class="action">
+		<p>Contact Web Services --- make link to TDX ticket submission?</p>
+	</div>
+</div>
+<!--end action-->
+<!--question-->
+<div class="section">
+	<h2 id="yes-catalog">Does the course group exist?</h2>
+	<p>Search for the course name in your email client. </p>
+	<p>[four character/letter dept code]"-"[4 digit course number][section letter]"-"[season/term]"-"[four digit year]@middleburycollege.onmicrosoft.com</p>
+	<div class="options">
+		<div class="yes">
+			<a href="#yes-mail">Yes</a>
+		</div>
+		<div class="no">
+			<a href="#no-mail">No</a>
+		</div>
+	</div>
+</div>
+<!--end question-->
+</div>
+<div class="action-row">
+<!--action-->
+
+<div class="section response">
+	<h2 id="no-mail">The course name isn't an option in mail.</h2>
+	<div class="action">
+		<p>Contact CSNS --- make this a link? TDX?</p>
+	</div>
+</div>
+<!--end action-->
+<!--question-->
+<div class="section">
+	<h2 id="yes-mail">Does the course show up in Course Hub?</h2>
+	<p>Search <a href="https://courses.middlebury.edu/hub">Course Hub</a> for the course.</p>
+	<div class="options">
+		<div class="yes">
+			<a href="#yes-hub">Yes</a>
+		</div>
+		<div class="no">
+			<a href="#no-hub">No</a>
+		</div>
+	</div>
+</div>
+<!--end question-->
+</div>
+<div class="action-row">
+<!--action-->
+
+<div class="section response">
+	<h2 id="no-hub">The course is not in Course Hub</h2>
+	<div class="action">
+		<p>Go to <a href="#banner"> question 1 "Is it in Banner?"</a>. If you've already done this . . . submit a ticket here</p>
+	</div>
+</div>
+<!--end action-->
+<!--question-->
+<div class="section">
+	<h2 id="yes-hub">Does the person have access to Course Hub?</h2>
+	<div class="options">
+		<div class="yes">
+			<a href="#yes-hub-access">Yes</a>
+		</div>
+		<div class="no">
+			<a href="#no-hub-access">No</a>
+		</div>
+	</div>
+</div>
+<!--end question-->
+</div>
+<div class="action-row">
+<!--action-->
+
+<div class="section response">
+	<h2 id="no-hub-access">The person does not have Course Hub access.</h2>
+	<div class="action">
+		<p>Go to <a href="#banner"> question 1 "Is it in Banner?"</a>. If you've already done this . . . submit a ticket here</p>
+	</div>
+</div>
+<!--end action-->
+<!--action-->
+
+<div class="section response">
+	<h2 id="yes-hub-access">The person has Course Hub access.</h2>
+	<div class="action">
+		<p>It seems that all is well. If that's not the case, do something ....</p>
+	</div>
+</div>
+</div>
+<!--end action-->
+
+<script type="text/javascript">
+
+window.onload = (event) => {
+  	setYearSemester();
+	makeButtonsWork();
+	watchDateChange();
+};
+
+
+function makeButtonsWork(){
+	const choices = document.querySelectorAll('.options a');
+	choices.forEach((choice) => {
+	  choice.addEventListener('click', () => {
+	    const nextId = choice.getAttribute("href");
+	    const nextStep = document.querySelector(nextId);
+	    const nextBox = nextStep.closest('.section');
+	    nextBox.classList.add('selected');
+	  });
+	});
+}	
+	
+
+function watchDateChange(){
+	const selectors = document.querySelectorAll('select');
+	selectors.forEach((selector) => {
+	  selector.addEventListener('change', () => {
+	    setYearSemester();	    
+	  });
+	});
+
+}
+
+function setYearSemester(){
+	const year = document.querySelector('#years').value;
+	const semester = document.querySelector('#semesters').value;
+	const middUrl = document.querySelector('#midd-banner-link');
+	const cleanMiddUrl = middUrl.href.split('?')[0];
+	middUrl.href = cleanMiddUrl+'?'+year+semester;
+	//url.outerText = url;
+	const miisUrl = document.querySelector('#miis-banner-link');
+	const cleanMiisUrl = miisUrl.href.split('?')[0];
+	miisUrl.href = cleanMiisUrl+year+semester;
+}	
+</script>
+</body>
+</html>
